@@ -2,9 +2,9 @@ name: deploy pages
 
 on:
   push:
-    branches: ['gh-pages-source']
+    branches: ['main']
   pull_request:
-    branches: ['gh-pages-source']
+    branches: ['main']
 permissions:
   contents: write
   pages: write
