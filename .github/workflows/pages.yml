@@ -23,7 +23,7 @@ jobs:
           pnpm i
           pnpm run build --base=/${REPO}
         env:
-          REPO: champ
+          REPO: AricGamma/anna
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
