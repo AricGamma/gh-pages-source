@@ -23,11 +23,13 @@ jobs:
           pnpm i
           pnpm run build --base=/${REPO}
         env:
+          # TODO: change repo name
           REPO: AricGamma/anna
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
+          # TODO: change repo name
           repositorty-name: AricGamma/anna
           target-folder: /

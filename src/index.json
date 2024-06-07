@@ -1,0 +1,161 @@
+[
+    {
+        "template": "title",
+        "props": {
+            "title": "Champ",
+            "subtitle": "Controllable and Consistent Human Image Animation with 3D Parametric Guidance",
+            "authors": [
+                {
+                    "name": "Shenhao Zhu*",
+                    "homepage": "https://github.com/ShenhaoZhu"
+                },
+                {
+                    "name": "Junming Leo Chen*",
+                    "homepage": "https://github.com/Leoooo333"
+                },
+                {
+                    "name": "Zuozhuo Dai",
+                    "homepage": "https://github.com/daizuozhuo"
+                },
+                {
+                    "name": "Yinghui Xu",
+                    "homepage": "https://ai3.fudan.edu.cn/info/1088/1266.htm"
+                },
+                {
+                    "name": "Xun Cao",
+                    "homepage": "https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html"
+                },
+                {
+                    "name": "Yao Yao",
+                    "homepage": "https://yoyo000.github.io/"
+                },
+                {
+                    "name": "Hao Zhu",
+                    "homepage": "http://zhuhao.cc/home/"
+                },
+                {
+                    "name": "Siyu Zhu",
+                    "homepage": "https://sites.google.com/site/zhusiyucs/home"
+                }
+            ],
+            "resources": {
+                "pdf": "https://arxiv.org/pdf/2403.14781",
+                "arxiv": "https://arxiv.org/abs/2403.14781",
+                "github": "https://github.com/fudan-generative-vision/champ",
+                "huggingface": ""
+            },
+            "mainVideo": "assets/video/main_video.mp4"
+        }
+    },
+    {
+        "template": "abstract",
+        "props": {
+            "content": "In this study, we introduce a methodology for human image animation by leveraging a 3D human parametric model within a latent diffusion framework to enhance shape alignment and motion guidance in curernt human generative techniques. The methodology utilizes the SMPL model as the 3D human parametric model to establish a unified representation of body shape and pose. This facilitates the accurate capture of intricate human geometry and motion characteristics from source videos. Specifically, we incorporate rendered depth images, normal maps, and semantic maps obtained from SMPL sequences, alongside skeleton-based motion guidance, to enrich the conditions to the latent diffusion model with comprehensive 3D shape and detailed pose attributes. A multi-layer motion fusion module, integrating self-attention mechanisms, is employed to fuse the shape and motion latent representations in the spatial domain. By representing the 3D human parametric model as the motion guidance, we can perform parametric shape alignment of the human body between the reference image and the source video motion. Experimental evaluations conducted on benchmark datasets demonstrate the methodology's superior ability to generate high-quality human animations that accurately capture both pose and shape variations. Furthermore, our approach also exhibits superior generalization capabilities on the proposed wild dataset. We will release our code and models for further research."
+        }
+    },
+    {
+        "template": "framework",
+        "props": {
+            "image": "assets/img/framework.jpg",
+            "description": "Given an input human image and a reference video depicting a motion sequence, the objective is to synthesize a video where the person in the image replicates the actions observed in the reference video, thereby creating a controllable and temporally coherent visual output."
+        }
+    },
+    {
+        "template": "video-comparision",
+        "props": {
+            "title": "Unseen Domain Animation",
+            "items": [
+                [
+                    "assets/video/unseen/0.mp4",
+                    "assets/video/unseen/1.mp4"
+                ],
+                [
+                    "assets/video/unseen/2.mp4",
+                    "assets/video/unseen/3.mp4"
+                ],
+                [
+                    "assets/video/unseen/4.mp4",
+                    "assets/video/unseen/5.mp4"
+                ]
+            ]
+        }
+    },
+    {
+        "template": "video-comparision",
+        "props": {
+            "title": "Cross-ID Animation",
+            "items": [
+                [
+                    "assets/video/cross-id/0.mp4",
+                    "assets/video/cross-id/1.mp4"
+                ],
+                [
+                    "assets/video/cross-id/1.mp4",
+                    "assets/video/cross-id/2.mp4"
+                ],
+                [
+                    "assets/video/cross-id/2.mp4",
+                    "assets/video/cross-id/0.mp4"
+                ]
+            ]
+        }
+    },
+    {
+        "template": "text-video",
+        "props": {
+            "title": "Combining with T2I",
+            "items": [
+                {
+                    "text": "A woman in a silver dress posing for a picture, trending on cg society, futurism, with bright blue eyes, dior campaign, tesseract, miranda kerr --v 5. 1 --ar 3:4.",
+                    "video": "assets/video/T2I/0.mp4"
+                },
+                {
+                    "text": "A realistic depiction of Aang, the last airbender, showcasing his mastery of all bending elements while in the powerful Avatar State. Ultra detailed, hd, 8k.",
+                    "video": "assets/video/T2I/1.mp4"
+                },
+                {
+                    "text": "A painting of a woman in a yellow dress, heavy metal comic cover art, space theme, pin-up girl, silver and yellow color scheme, where the planets are candy, inspired by Joyce Ballantyne Brand, full - body artwork, lunar themed attire, golden age illustrator, blue and black color scheme.",
+                    "video": "assets/video/T2I/2.mp4"
+                }
+            ]
+        }
+    },
+    {
+        "template": "single-video",
+        "props": {
+            "title": "Comparisions with Existed Approaches",
+            "items": [
+                "assets/video/comparisions/comparision-05.mp4",
+                "assets/video/comparisions/comparision-07.mp4",
+                "assets/video/comparisions/comparision-09.mp4",
+                "assets/video/comparisions/comparision-10.mp4"
+            ]
+        }
+    },
+    {
+        "template": "video-comparision",
+        "props": {
+            "title": "Animation on TikTok Dataset",
+            "items": [
+                [
+                    "assets/video/human-animation/human-animation-1.mp4",
+                    "assets/video/human-animation/human-animation-2.mp4"
+                ],
+                [
+                    "assets/video/human-animation/human-animation-3.mp4",
+                    "assets/video/human-animation/human-animation-4.mp4"
+                ],
+                [
+                    "assets/video/human-animation/human-animation-5.mp4",
+                    "assets/video/human-animation/human-animation-6.mp4"
+                ]
+            ]
+        }
+    },
+    {
+        "template": "bibtex",
+        "props": {
+            "bibTeX": "@misc{zhu2024champ,\n\ttitle={Champ: Controllable and Consistent Human Image Animation with 3D Parametric Guidance}, \n\tauthor={Shenhao Zhu and Junming Leo Chen and Zuozhuo Dai and Yinghui Xu and Xun Cao and Yao Yao and Hao Zhu and Siyu Zhu},\n\tyear={2024},\n\teprint={2403.14781},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CV}\n}"
+        }
+    }
+]
