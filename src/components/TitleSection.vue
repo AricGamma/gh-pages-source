@@ -3,11 +3,17 @@
         <h1>{{ title }}</h1>
         <h3>{{ subtitle }}</h3>
 
-        <div v-if="authors" class="authors">
-            <span v-for="author, i in authors" :key="i">
-                <a :href="author.homepage" target="_blank">{{ author.name }}</a>
-                <span v-if="i < authors.length - 1">, </span>
-            </span>
+        <div v-for="(authorsItem, i) in authors" :key="i" class="authors">
+            <div class="authors" :class="{ thin: i === authorsItem.length - 2 }">
+                <span v-for="author, i in authorsItem" :key="i">
+                    <sup v-if="author.prefix">{{ author.prefix }}</sup>
+                    <a class="author-name" v-if="author.homepage" :href="author.homepage" target="_blank">{{ author.name
+                        }}</a>
+                    <span class="author-name" v-else>{{ author.name }}</span>
+                    <sup v-if="author.suffix">{{ author.suffix }}</sup>
+                    <span v-if="i < authorsItem.length - 1">, </span>
+                </span>
+            </div>
         </div>
 
         <div class="res_link">
@@ -36,6 +42,8 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted } from 'vue';
+
 interface Props {
     title?: string,
     subtitle?: string,
@@ -50,6 +58,15 @@ const subtitle = props.subtitle
 const authors = props.authors
 const resources = props.resources
 const mainVideo = props.mainVideo && new URL(`../${props.mainVideo}`, import.meta.url).href
+
+onMounted(() => {
+    if (title) {
+        document.title = title
+    }
+    if (subtitle) {
+        document.title += `: ${subtitle}`
+    }
+})
 </script>
 
 <style lang="scss" scoped>
@@ -57,6 +74,12 @@ const mainVideo = props.mainVideo && new URL(`../${props.mainVideo}`, import.met
 
     .authors {
         @apply text-center text-lg;
+
+        .thin {
+            .author-name {
+                @apply font-light
+            }
+        }
     }
 
     .res_link {

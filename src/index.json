@@ -2,47 +2,91 @@
     {
         "template": "title",
         "props": {
-            "title": "Champ",
-            "subtitle": "Controllable and Consistent Human Image Animation with 3D Parametric Guidance",
+            "title": "Hallo",
+            "subtitle": "Hierarchical Audio-Driven Visual Synthesis for Portrait Image Animation",
             "authors": [
-                {
-                    "name": "Shenhao Zhu*",
-                    "homepage": "https://github.com/ShenhaoZhu"
-                },
-                {
-                    "name": "Junming Leo Chen*",
-                    "homepage": "https://github.com/Leoooo333"
-                },
-                {
-                    "name": "Zuozhuo Dai",
-                    "homepage": "https://github.com/daizuozhuo"
-                },
-                {
-                    "name": "Yinghui Xu",
-                    "homepage": "https://ai3.fudan.edu.cn/info/1088/1266.htm"
-                },
-                {
-                    "name": "Xun Cao",
-                    "homepage": "https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html"
-                },
-                {
-                    "name": "Yao Yao",
-                    "homepage": "https://yoyo000.github.io/"
-                },
-                {
-                    "name": "Hao Zhu",
-                    "homepage": "http://zhuhao.cc/home/"
-                },
-                {
-                    "name": "Siyu Zhu",
-                    "homepage": "https://sites.google.com/site/zhusiyucs/home"
-                }
+                [
+                    {
+                        "name": "Mingwang Xu",
+                        "homepage": "https://github.com/xumingw",
+                        "suffix": "1*"
+                    },
+                    {
+                        "name": "Hui Li",
+                        "homepage": "https://github.com/crystallee-ai",
+                        "suffix": "1*"
+                    },
+                    {
+                        "name": "Qingkun Su",
+                        "homepage": "https://github.com/subazinga",
+                        "suffix": "1*"
+                    },
+                    {
+                        "name": "Hanlin Shang",
+                        "homepage": "https://github.com/NinoNeumann",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Liwei Zhang",
+                        "homepage": "https://github.com/AricGamma",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Ce Liu",
+                        "homepage": "https://github.com/cnexah",
+                        "suffix": "3"
+                    }
+                ],
+                [
+                    {
+                        "name": "Jingdong Wang",
+                        "homepage": "https://jingdongwang2017.github.io/",
+                        "suffix": "2"
+                    },
+                    {
+                        "name": "Luc Van Gool",
+                        "homepage": "",
+                        "suffix": "3"
+                    },
+                    {
+                        "name": "Yao Yao",
+                        "homepage": "https://yoyo000.github.io/",
+                        "suffix": "4"
+                    },
+                    {
+                        "name": "Siyu Zhu",
+                        "homepage": "https://sites.google.com/site/zhusiyucs/home",
+                        "suffix": "1"
+                    }
+                ],
+                [
+                    {
+                        "name": "Fudan University",
+                        "homepage": "",
+                        "prefix": "1"
+                    },
+                    {
+                        "name": "Baidu Inc",
+                        "homepage": "",
+                        "prefix": "2"
+                    },
+                    {
+                        "name": "ETH Zurich",
+                        "homepage": "",
+                        "prefix": "3"
+                    },
+                    {
+                        "name": "Nanjing University",
+                        "homepage": "",
+                        "prefix": "4"
+                    }
+                ]
             ],
             "resources": {
-                "pdf": "https://arxiv.org/pdf/2403.14781",
-                "arxiv": "https://arxiv.org/abs/2403.14781",
-                "github": "https://github.com/fudan-generative-vision/champ",
-                "huggingface": ""
+                "pdf": "",
+                "arxiv": "",
+                "github": "https://github.com/fudan-generative-vision/hallo",
+                "huggingface": "https://huggingface.co/fudan-generative-ai/hallo"
             },
             "mainVideo": "assets/video/main_video.mp4"
         }
